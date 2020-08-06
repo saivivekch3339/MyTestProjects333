@@ -3,6 +3,13 @@ manual testing
 automatin testing
 smoke testing
 
+
 system testing
 regression testing
+
+maintainence testing
+accepttesting
+
+
 thankyou added
+all the best
