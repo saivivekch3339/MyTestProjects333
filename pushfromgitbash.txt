@@ -1,0 +1,2 @@
+testing 
+push from bash to git
