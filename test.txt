@@ -3,5 +3,6 @@ manual testing
 automatin testing
 smoke testing
 
-
+system testing
+regression testing
 thankyou added
