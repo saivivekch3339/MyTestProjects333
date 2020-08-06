@@ -2,6 +2,8 @@ hi i am creating and testing the new file in git
 manual testing
 automatin testing
 smoke testing
-
+maintainence testing
+accepttesting
 
 thankyou added
+all the best
