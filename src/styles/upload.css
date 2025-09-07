@@ -1,0 +1,78 @@
+/* Center the container */
+.upload-container {
+  min-height: 100vh; /* full screen height */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/recipe_bg.jpg'); /* subtle background image */
+  font-family: Arial, sans-serif;
+  
+}
+
+/* Form box */
+.upload-form {
+  width: 100%;
+  max-width: 400px; /* keep it compact */
+  background: #e6f4ea;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: #2e7d32 2px solid;
+}
+
+/* Heading */
+.upload-form h2 {
+  margin-bottom: 20px;
+  color: #4b020b;
+}
+
+/* Inputs and textarea */
+.upload-form input,
+.upload-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.upload-form input:focus,
+.upload-form textarea:focus {
+  border-color: #4a90e2;
+}
+
+/* Textarea styling */
+.upload-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Button */
+.upload-form button {
+  width: 100%;
+  padding: 12px;
+  background: #dbdbdb;
+  color: #e53935;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: ease 0.3s ease;
+
+}
+
+.upload-form label {
+  color: #012b12;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+}
+.upload-form button:hover {
+  background: #357ab8;
+}

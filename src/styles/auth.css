@@ -1,0 +1,62 @@
+/* Background for login & register */
+.auth-container {
+  background-image: url("/public/images/bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card box */
+.auth-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+.auth-box h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.auth-box input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Button */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-box button:hover {
+  background-color: #218838;
+}
+
+/* Messages */
+.message.success {
+  color: green;
+  margin: 10px 0;
+}
+
+.message.error {
+  color: red;
+  margin: 10px 0;
+}

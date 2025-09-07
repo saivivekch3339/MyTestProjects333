@@ -1,0 +1,281 @@
+/* Container for the whole page */
+.recipe-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+
+  /* Soft gradient background */
+  background: linear-gradient(135deg, #fef6e4, #fde2e4, #e0f7fa);
+  background-attachment: fixed; /* stays while scrolling */
+}
+
+/* Page title */
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Responsive grid for recipe cards */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Recipe card box */
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover animation */
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Recipe image */
+.recipe-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* Info section inside card */
+.recipe-info {
+  padding: 14px;
+  text-align: center;
+}
+
+/* Recipe title */
+.recipe-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
+}
+
+/* ===== Modal Styles ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); /* glass blur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 16px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: popIn 0.3s ease;
+}
+
+/* Small entrance animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #e63946;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.view-btn,
+.delete-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.view-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #e63946;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c92a34;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 20px;
+  background: linear-gradient(90deg, #ffecd2, #fcb69f);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Profile Modal */
+.profile-modal {
+  text-align: center;
+}
+
+.profile-modal h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.profile-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Buttons */
+/* Buttons */
+.logout-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 30px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: ease-in 0.2s ease;
+  margin-left: 20px; /* ✅ pushes button to the right (space on left) */
+}
+
+/* Hover effect */
+.logout-btn:hover {
+  background-color: #45a049;
+}
+
+
+.logout-btn.danger {
+  background-color: #e63946;
+}
+
+.logout-btn.danger:hover {
+  background-color: #c92a34;
+}
+
+.logout-btn.close-btn {
+  background-color: #999;
+}
+
+.logout-btn.close-btn:hover {
+  background-color: #777;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff8f0; /* light cream/brownish background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* stays above page content but below modal */
+}
+
+/* Navbar title */
+.navbar-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #5a2d0c; /* dark brown */
+  margin: 0;
+}
+
+/* Profile button (My Profile) */
+.logout-btn {
+  background: #29c72e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: ease 0.2s;
+}
+
+.logout-btn:hover {
+  background: #1d9f22;
+}
+
+
+/* Navbar Title */
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5a2d0c; /* dark brown */
+  margin: 0;
+}
+
+/* My Profile Button */
+.profile-btn {
+  background-color: #4caf50; /* green */
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  margin-left: 20px;   /* space from the left side */
+  font-weight: 600;
+}
+
+/* Hover effect */
+.profile-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* small lift on hover */
+}
+
+/* Optional: focus/active states */
+.profile-btn:active {
+  background-color: #3e8e41;
+  transform: translateY(0);
+}
